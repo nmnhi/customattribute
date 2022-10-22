@@ -1,12 +1,36 @@
-<div class="container" setBackground>
-  <p appHover>
+<div class="container" setBackground appHover>
+  <p>
     This is a demo HTML content to undertand custom attribute directive in
     Angular.
   </p>
 </div>
-<div>
-  <p appHighlight appHover>
+<div appHighlight appHover>
+  <p>
     This is a demo HTML content to undertand custom attribute directive in
+    Angular.
+  </p>
+</div>
+<div class="container" [appBetterhighlight]="'red'" [defaultColor]="'yellow'">
+  <p>
+    This is a demo HTML content to undertand custom @HostBinding in Angular.
+  </p>
+</div>
+<div [appClass]="{ container: false, 'change-font': true }">
+  <p>
+    This is a demo HTML content to undertand custom ngClass directive in
+    Angular.
+  </p>
+</div>
+<div
+  class="container"
+  [appStyle]="{
+    backgroundColor: active ? 'green' : 'red',
+    color: 'white',
+    fontWeight: 'bold'
+  }"
+>
+  <p>
+    This is a demo HTML content to undertand custom ngStyle directive in
     Angular.
   </p>
 </div>
