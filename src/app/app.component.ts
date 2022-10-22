@@ -8,4 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'CustomAttribute';
   active: boolean = true;
+  display: boolean = false;
+  DisplayNotice() {
+    this.display = true;
+  }
+  occupation: string = 'teacher';
 }

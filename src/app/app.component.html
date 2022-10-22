@@ -34,3 +34,41 @@
     Angular.
   </p>
 </div>
+
+<button class="btn btn-notice" (click)="DisplayNotice()">Show notice</button>
+
+<div class="info-container notice" *appIf="display">
+  <h3>This is important notice</h3>
+  <p>This is a notice issued for all website user.</p>
+</div>
+
+<!-- <ng-template #myVar>
+  <p>This is an example paragraph</p>
+</ng-template> -->
+
+<!-- <ng-template [ngIf]="display">
+  <div class="info-container notice">
+    <h3>This is important notice</h3>
+    <p>This is a notice issued for all website user.</p>
+  </div>
+</ng-template> -->
+
+<!-- <ng-template #myVar>
+  <p>This is an example paragraph</p>
+</ng-template> -->
+
+<div class="container" [ngSwitch]="occupation">
+  <p *ngSwitchCase="'teacher'">
+    This paragraph will be displayed when occupation is teacher
+  </p>
+  <p *ngSwitchCase="'designer'">
+    This paragraph will be displayed when occupation is desinger
+  </p>
+  <p *ngSwitchCase="'lawer'">
+    This paragraph will be displayed when occupation is lawer
+  </p>
+  <p *ngSwitchDefault>
+    This paragraph will be displayed when occupation is if no case matches
+    switch expression
+  </p>
+</div>

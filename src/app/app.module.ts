@@ -9,9 +9,10 @@ import { HoverDirective } from './CsutomDirective/hover.directive';
 import { BetterhighlightDirective } from './CsutomDirective/betterhighlight.directive';
 import { ClassDirective } from './CsutomDirective/class.directive';
 import { StyleDirective } from './CsutomDirective/style.directive';
+import { IfDirective } from './CsutomDirective/if.directive';
 
 @NgModule({
-  declarations: [AppComponent, SetBackgroundDirective, HighlightDirective, HoverDirective, BetterhighlightDirective, ClassDirective, StyleDirective],
+  declarations: [AppComponent, SetBackgroundDirective, HighlightDirective, HoverDirective, BetterhighlightDirective, ClassDirective, StyleDirective, IfDirective],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
